@@ -13,15 +13,11 @@
     <style type="text/css">
     body {
         margin: 0;
-        background: rgb(232,174,238);
-
-        animation-name: bgcoming;
-        animation-duration: .5s;
-        animation-timing-function: ease-in-out;
-        animation-fill-mode: backwards;
+        background: rgba(255, 255, 255, 0);
     }
 
     #main {
+        background-color: rgb(232,174,238);
         background: radial-gradient(circle, rgba(232,174,238,1) 0%, rgba(155,192,235,1) 100%);
         top: 0;
         right: 0;
@@ -34,6 +30,7 @@
         -o-object-fit: cover;
         object-fit: cover;
         z-index: -1;
+        border-radius: 0.6rem;
 
         animation-name: coming;
         animation-duration: .5s;
@@ -57,16 +54,12 @@
         animation-duration: .5s;
         animation-timing-function: ease-in-out;
         animation-fill-mode: backwards;
+        animation-delay: 400ms;
     }
 
     @keyframes coming {
         from { opacity: 0; }
         to { opacity: 1; }
-    }
-
-    @keyframes bgcoming {
-        from { background: rgba(232,174,238, 0); }
-        to { background: rgba(232,174,238, 1); }
     }
     </style>
 </head>
