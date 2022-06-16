@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+
+    <style type="text/css">
+    * {
+        font-family:  'Montserrat', sans-serif;
+    }
+
+    body {
+        margin: 0;
+    }
+
+    #main {
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        height: 100%;
+        height: 100vh;
+        width: 100%;
+        width: 100vw;
+        -o-object-fit: cover;
+        object-fit: cover;
+        z-index: -1;
+        border-radius: 0.6rem;
+
+        animation-name: coming;
+        animation-duration: .5s;
+        animation-timing-function: ease-in-out;
+        animation-fill-mode: backwards;
+        animation-delay: 400ms;
+    }
+
+    #main > div {
+        margin: 0;
+        position: absolute;
+        z-index: 1;
+        top: 50%;
+        left: 50%;
+        -webkit-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+    }
+
+    @keyframes coming {
+        from { opacity: 0; }
+        to { opacity: 1; }
+    }
+    </style>
+</head>
+<body>
+    <div id="main">
+        <div id="ww_bc18c3c1b9b0f" v='1.20' loc='id' a='{"t":"horizontal","lang":"fr","ids":["wl4529"],"cl_bkg":"#FFFFFF00","cl_font":"#000000","cl_cloud":"#d4d4d4","cl_persp":"#2196F3","cl_sun":"#FFC107","cl_moon":"#FFC107","cl_thund":"#FF5722","sl_sot":"celsius","sl_ics":"one_a","font":"Arial"}'>Weather Data Source: <a href="https://wetterlabs.de/wetter_paris/heute/" id="ww_bc18c3c1b9b0f_u" target="_blank">Wetter Heute Paris</a></div><script async src="https://srv2.weatherwidget.org/js/?id=ww_bc18c3c1b9b0f"></script>
+    </div>
+</body>
+</html>
